@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Print("hello")
+	c := newCycle(6)
+	c.labelFirstTwoEdges()
+	c.nextLabel(1)
 }
