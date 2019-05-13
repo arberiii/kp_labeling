@@ -7,7 +7,7 @@ type cycle struct {
 	length int
 }
 
-var labels = [...]string{"1", "2", "3"}
+var labels = [...]string{"1", "2", "3", "4"}
 
 func newCycle(n int) cycle {
 	c := make([]string, n)
