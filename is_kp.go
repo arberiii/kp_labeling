@@ -15,6 +15,10 @@ func (c *cycle) everyLabelTwice() bool {
 	return true
 }
 
-func (c *cycle) partitionSet() bool {
-
+func (c *cycle) partitionSet(index int) bool {
+	var min int
+	if min = index; min > c.length-index {
+		min = c.length - index
+	}
+	return false
 }
