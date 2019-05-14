@@ -14,3 +14,7 @@ func (c *cycle) everyLabelTwice() bool {
 	}
 	return true
 }
+
+func (c *cycle) partitionSet() bool {
+
+}
