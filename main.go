@@ -3,8 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	//c := newCycle(8)
-	//c.labelFirstTwoEdges()
-	//c.nextLabel(1)
-	fmt.Println(labelsOrderSet([]string{"5", "2", "3", "5", "1", "3", "3"}))
+	c := newCycle(8)
+	c.labelFirstTwoEdges()
+	c.nextLabel(1)
+	fmt.Println(c)
+	fmt.Println(labelsOrderSet(c.labels))
+	fmt.Println(c)
+	fmt.Println(c.partition(2))
 }

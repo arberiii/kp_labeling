@@ -51,6 +51,13 @@ func (c *cycle) nextLabel(current int) {
 		if !c.everyLabelTwice() {
 			return
 		}
+
+		// not quite an improvement but still
+		for i := 2; i < 6; i++ {
+			if !c.partition(i) {
+				return
+			}
+		}
 		c.writeToFile()
 		return
 	}
