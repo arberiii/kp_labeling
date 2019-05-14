@@ -48,6 +48,9 @@ func (c *cycle) nextLabel(current int) {
 		if c.labels[0] == c.labels[c.length-1] {
 			return
 		}
+		if !c.everyLabelTwice() {
+			return
+		}
 		c.writeToFile()
 		return
 	}
