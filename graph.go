@@ -16,8 +16,8 @@ func newCycle(n int) cycle {
 
 // up to the labels it is the same if we name the first two edges with 1 and 2 respectively
 func (c *cycle) labelFirstTwoEdges() {
-	c.labels[0] = "1"
-	c.labels[1] = "2"
+	c.labels[0] = labels[0]
+	c.labels[1] = labels[1]
 	return
 }
 
