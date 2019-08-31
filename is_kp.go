@@ -4,6 +4,7 @@ import (
 	"sort"
 )
 
+// in a cycle every label should appear twice, look KP paper
 func (c *cycle) everyLabelTwice() bool {
 	for i := range labels {
 		counter := 0
